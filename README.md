@@ -1,4 +1,4 @@
-1. Put pretrained model into the model folder<br>
+1. Put pretrained model into the "model" folder<br>
 change line #96-97 of SnDserver.py<br>
 ```python
 MODELS = 'models/'  # path to model directory
