@@ -5,9 +5,8 @@ Put pretrained model into the model folder<br><br>
 MODELS = 'models/'  # path to model directory
 names = [os.path.join(MODELS,'G.pth'), os.path.join(MODELS,'E.pth'), os.path.join(MODELS,'EX.pth')]
 ```
-<br>
-2. load sample images into public/sample_images/ directory<br>
-3. run with `python SnDserver.py`
+2. load sample images into the "public/sample_images/" directory<br>
+3. run with `python3 SnDserver.py`<br>
 
 
 
