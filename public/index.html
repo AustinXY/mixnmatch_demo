@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="croppie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixNMatch Demo</title>
+</head>
+
+<body>
+
+    <div class="masterContainer">
+
+        <div class="titleContainer">
+            <h1 class="title">MixNMatch demo</h1>
+        </div>
+
+        <p id='instruction'>
+            Drag or upload images into the reference image containers <br>
+        </p>
+        <div>
+            <p id='sample_disc'>sample images (scroll down for more):</p>
+            <div id="sampleContainer">
+                <img class="sampleImg" src="sample_images/0.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/1.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/2.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/3.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/4.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/5.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/6.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/7.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/8.png" ondragstart="drag(event)" draggable="true">
+                <!-- <img class="sampleImg" src="sample_images/9.png" ondragstart="drag(event)" draggable="true"> -->
+                <img class="sampleImg" src="sample_images/10.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/11.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/12.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/13.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/14.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/15.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/16.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/17.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/18.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/19.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/20.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/21.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/22.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/23.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/24.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/25.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/26.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/27.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/28.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/29.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/30.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/31.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/32.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/33.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/34.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/35.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/36.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/37.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/38.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/39.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/40.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/41.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/42.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/43.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/44.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/45.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/46.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/47.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/48.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/49.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/50.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/51.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/52.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/53.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/54.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/55.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/56.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/57.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/58.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/59.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/60.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/61.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/62.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/63.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/64.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/65.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/66.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/67.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/68.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/69.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/70.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/71.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/72.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/73.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/74.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/75.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/76.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/77.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/78.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/79.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/80.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/81.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/82.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/83.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/84.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/85.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/86.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/87.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/88.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/89.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/90.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/91.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/92.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/93.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/94.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/95.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/96.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/97.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/98.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/99.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/100.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/101.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/102.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/103.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/104.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/105.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/106.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/107.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/108.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/109.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/110.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/111.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/112.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/113.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/114.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/115.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/116.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/117.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/118.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/119.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/120.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/121.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/122.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/123.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/124.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/125.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/126.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/127.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/128.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/129.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/130.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/131.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/132.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/133.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/134.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/135.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/136.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/137.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/138.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/139.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/140.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/141.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/142.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/143.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/144.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/145.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/146.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/147.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/148.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/149.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/150.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/151.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/152.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/153.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/154.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/155.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/156.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/157.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/158.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/159.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/160.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/161.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/162.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/163.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/164.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/165.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/166.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/167.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/168.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/169.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/170.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/171.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/172.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/173.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/174.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/175.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/176.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/177.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/178.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/179.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/180.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/181.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/182.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/183.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/184.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/185.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/186.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/187.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/188.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/189.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/190.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/191.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/192.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/193.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/194.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/195.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/196.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/197.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/198.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/199.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/200.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/201.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/202.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/203.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/204.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/205.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/206.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/207.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/208.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/209.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/210.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/211.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/212.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/213.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/214.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/215.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/216.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/217.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/218.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/219.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/220.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/221.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/222.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/223.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/224.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/225.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/226.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/227.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/228.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/229.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/230.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/231.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/232.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/233.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/234.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/235.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/236.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/237.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/238.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/239.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/240.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/241.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/242.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/243.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/244.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/245.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/246.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/247.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/248.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/249.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/250.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/251.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/252.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/253.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/254.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/255.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/256.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/257.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/258.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/259.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/260.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/261.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/262.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/263.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/264.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/265.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/266.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/267.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/268.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/269.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/270.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/271.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/272.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/273.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/274.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/275.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/276.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/277.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/278.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/279.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/280.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/281.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/282.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/283.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/284.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/285.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/286.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/287.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/288.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/289.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/290.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/291.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/292.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/293.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/294.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/295.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/296.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/297.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/298.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/299.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/300.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/301.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/302.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/303.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/304.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/305.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/306.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/307.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/308.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/309.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/310.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/311.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/312.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/313.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/314.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/315.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/316.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/317.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/318.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/319.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/320.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/321.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/322.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/323.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/324.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/325.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/326.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/327.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/328.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/329.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/330.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/331.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/332.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/333.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/334.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/335.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/336.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/337.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/338.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/339.png" ondragstart="drag(event)" draggable="true">
+                <img class="sampleImg" src="sample_images/340.png" ondragstart="drag(event)" draggable="true">
+            </div>
+        </div>
+
+        <div id="contentContainer">
+            <div id="btnBlock">
+                <button id="code_mode" class="mode_btn">code mode<br>(semantic match)</button>
+                <button id="feature_mode" class="mode_btn">feature mode<br>(exact shape match)</button>
+                <!-- <button id="upload">generate</button> -->
+            </div>
+            <div id="sourceContainer">
+                <div class="imgBlock">
+                    <p class="imgDesc" style="color: tomato;">select background image</p>
+                    <div class="imageContainer">
+                        <div id="bg_img_crop" ondragover="allowDrop(event)" ondrop="bg_drop(event)"></div>
+                    </div>
+                    <input type="file" name="file1" id="bg_upload" multiple="multiple" accept="image/*" class="custom-file-input">
+                </div>
+
+                <div class="imgBlock">
+                    <p class="imgDesc" style="color: darkorange;">select shape image</p>
+                    <div class="imageContainer">
+                        <div id="shp_img_crop" ondragover="allowDrop(event)" ondrop="shp_drop(event)"></div>
+                    </div>
+                    <input type="file" name="file1" id="shp_upload" multiple="multiple" accept="image/*" class="custom-file-input">
+                </div>
+
+                <div class="imgBlock">
+                    <p class="imgDesc" style="color: steelblue;">select texture image</p>
+                    <div class="imageContainer">
+                        <div id="txtr_img_crop" ondragover="allowDrop(event)" ondrop="txtr_drop(event)"></div>
+                    </div>
+                    <input type="file" name="file1" id="txtr_upload" multiple="multiple" accept="image/*" class="custom-file-input">
+                </div>
+
+                <div class="imgBlock" id='pose_block'>
+                    <p class="imgDesc" style="color: limegreen;">select pose image</p>
+                    <div class="imageContainer">
+                        <div id="pose_img_crop" ondragover="allowDrop(event)" ondrop="pose_drop(event)"></div>
+                    </div>
+                    <input type="file" name="file1" id="pose_upload" multiple="multiple" accept="image/*" class="custom-file-input">
+                </div>
+            </div>
+            <div id="btnBlock">
+                <button id="upload">generate</button>
+            </div>
+        </div>
+
+        <div id="rsltContainer">
+            <p class="imgDesc">result image</p>
+            <div id="rsltImageContainer" id="rslt_img">
+                <img id="out_img">
+            </div>
+        </div>
+
+        <div id="textContainer">
+            <!-- <p>FineGAN disentangles the background, object shape (parent), and object appearance (child) to
+                hierarchically generate fine-grained objects, without any fine-grained annotations.</p> -->
+            <p id="disc_txt">
+                MixNMatch is a conditional generative model that learns to disentangle and encode background, object pose, shape, and texture from real images with minimal
+                supervision, for mix-and-match image generation. More information at <a href="https://github.com/Yuheng-Li/MixNMatch"> github repository </a></p>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="croppie.js"></script>
+<script src="upload_form.js"></script>
+
+</html>

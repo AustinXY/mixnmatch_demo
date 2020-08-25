@@ -1,0 +1,5 @@
+__pycache__
+public/sample_images/*
+public/tmp_images/*
+models/*
+*.pyc

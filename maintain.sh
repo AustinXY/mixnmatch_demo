@@ -1,0 +1,1 @@
+rm public/tmp_images/*
