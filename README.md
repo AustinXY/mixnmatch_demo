@@ -1,6 +1,5 @@
-Put pretrained model into the model folder<br><br>
-
-1. change line #96-97 of SnDserver.py<br>
+1. Put pretrained model into the model folder<br>
+change line #96-97 of SnDserver.py<br>
 ```python
 MODELS = 'models/'  # path to model directory
 names = [os.path.join(MODELS,'G.pth'), os.path.join(MODELS,'E.pth'), os.path.join(MODELS,'EX.pth')]
